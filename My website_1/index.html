@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esmail Nouralden - Network Security Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader Animation -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header with Sticky Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Esmail Nouralden</h1>
+            </div>
+            <p class="title">Network Security Specialist</p>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="videos.html">Videos</a></li> <!-- Link to Videos Page -->
+                    <li><a href="admin.html">Admin</a></li> <!-- Link to Admin Page -->
+                    <li><a href="#contact" class="contact-button">Contact</a></li>
+                </ul>
+                <div class="controls">
+                    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <a href="Esmail_Nouralden_CV.pdf" class="download-cv" target="_blank">Download CV</a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>Discover my projects, skills, and courses in the field of cybersecurity.</p>
+            <a href="#projects" class="hero-button">Explore Projects</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section scroll-animation">
+            <h2>About Me</h2>
+            <p>I am a passionate Network Security Specialist with expertise in various cybersecurity domains. My experience includes implementing security protocols, conducting vulnerability assessments, and developing robust security solutions.</p>
+        </section>
+
+        <section id="projects" class="section scroll-animation">
+            <h2>Projects</h2>
+            <p>During my academic and professional journey, I have worked on various projects that showcase my skills and dedication to cybersecurity. Some notable projects include:</p>
+            <div class="project-grid">
+                <div class="project-card" onclick="showProjectModal('Smart Road Security System for Stolen Car Detection', 'Sep 2023 - Jun 2024', 'Innovating an AI-based security system employing Raspberry Pi technology for real-time vehicle tracking and recovery.')">
+                    <div class="project-image">
+                        <img src="images/smart-road-security.jpg" alt="Smart Road Security System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Road Security System</h3>
+                        <p class="project-description">An AI-based security system employing Raspberry Pi technology for real-time vehicle tracking and recovery.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectModal('Calculator Design Using Atmega32', 'Sep 2021 - Dec 2021', 'Engineered a functional calculator demonstrating proficiency in embedded systems programming.')">
+                    <div class="project-image">
+                        <img src="images/calculator-design.jpg" alt="Calculator Design Using Atmega32">
+                    </div>
+                    <div class="project-info">
+                        <h3>Calculator Design Using Atmega32</h3>
+                        <p class="project-description">Engineered a functional calculator demonstrating proficiency in embedded systems programming.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectModal('Transistor Audio Amplifier Project', 'Feb 2022 - May 2022', 'Successfully designed and implemented an audio amplifier circuit using Multisim software.')">
+                    <div class="project-image">
+                        <img src="images/audio-amplifier.jpg" alt="Transistor Audio Amplifier Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Transistor Audio Amplifier Project</h3>
+                        <p class="project-description">Successfully designed and implemented an audio amplifier circuit using Multisim software.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectModal('Sensor-Based Autonomous Vehicle', '', 'Developed a microprocessor-controlled car that navigates based on sensor input.')">
+                    <div class="project-image">
+                        <img src="images/autonomous-vehicle.jpg" alt="Sensor-Based Autonomous Vehicle">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sensor-Based Autonomous Vehicle</h3>
+                        <p class="project-description">Developed a microprocessor-controlled car that navigates based on sensor input.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="showProjectModal('Antenna Signal Enhancement Initiative', 'Sep 2022 - Dec 2022 / Feb 2023 - May 2023', 'Utilized CST Microwave Studio to design an antenna that significantly improves signal strength.')">
+                    <div class="project-image">
+                        <img src="images/antenna-signal.jpg" alt="Antenna Signal Enhancement Initiative">
+                    </div>
+                    <div class="project-info">
+                        <h3>Antenna Signal Enhancement Initiative</h3>
+                        <p class="project-description">Utilized CST Microwave Studio to design an antenna that significantly improves signal strength.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section scroll-animation">
+            <h2>Skills</h2>
+            <p>My key skills include:</p>
+            <ul class="skills-list">
+                <li><img src="images/icon-python.png" alt="Python Icon"> Python Programming</li>
+                <li><img src="images/icon-security.png" alt="Security Icon"> Network Security Protocols</li>
+                <li><img src="images/icon-hacking.png" alt="Hacking Icon"> Penetration Testing</li>
+                <li><img src="images/icon-admin.png" alt="Admin Icon"> System Administration</li>
+                <li><img src="images/icon-vulnerability.png" alt="Vulnerability Icon"> Vulnerability Assessment</li>
+            </ul>
+        </section>
+
+        <section id="courses" class="section scroll-animation">
+            <h2>Courses</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">CCNA</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>Cisco Certified Network Associate (CCNA):</strong> This course provided hands-on experience in configuring and managing network routers and switches, covering networking concepts like IP addressing, subnetting, and routing protocols.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">MCSA</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>Microsoft Certified Solutions Associate (MCSA):</strong> Focused on Microsoft Windows Server and core services, including DHCP, DNS, and Active Directory.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Linux Administration I</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>Linux Administration I:</strong> Covered fundamental Linux commands and concepts, including file systems, user management, and shell scripting.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Python for Security</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>Python for Security Applications:</strong> Focused on leveraging Python programming for cybersecurity purposes, including automation scripts for network scanning.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">FortiGate NSE4</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>FortiGate Network Security Expert (NSE4):</strong> This course offered an in-depth understanding of FortiGate firewalls, including installation and management.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">IBM QRadar SIEM</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>IBM QRadar SIEM:</strong> Focused on deploying and managing IBM QRadar for real-time threat detection.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">OSCP</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>Offensive Security Certified Professional (OSCP):</strong> Advanced ethical hacking course covering real-world penetration testing techniques.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">CEH (Self-Study)</div>
+                    <div class="accordion-content" style="display: none;">
+                        <p><strong>Certified Ethical Hacker (CEH) (Self-Study):</strong> Focused on ethical hacking techniques, vulnerability scanning, and incident response.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section scroll-animation">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Engineering in Electrical, Communication, And Electronic Systems Engineering</strong> - MSA University (Oct 2019 - Jul 2024)</li>
+                <li><strong>Diploma in Cybersecurity Engineering</strong> - IT Gate Academy (Sep 2022 – Sep 2023)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section scroll-animation">
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with Social Media Links -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Esmail Nouralden. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <h3 id="modal-project-title"></h3>
+            <p id="modal-project-details"></p>
+        </div>
+    </div>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

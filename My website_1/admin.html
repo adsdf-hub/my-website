@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Esmail Nouralden</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Esmail Nouralden</h1>
+            </div>
+            <p class="title">Network Security Specialist</p>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="index.html#contact" class="contact-button">Contact</a></li>
+                </ul>
+                <div class="controls">
+                    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="admin-panel" class="section">
+            <h2>Admin Panel</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="video-title">Video Title:</label>
+                    <input type="text" id="video-title" name="video-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="video-file">Upload Video:</label>
+                    <input type="file" id="video-file" name="video-file" accept="video/*" required>
+                </div>
+                <input type="submit" value="Upload Video" class="submit-button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Esmail Nouralden. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
